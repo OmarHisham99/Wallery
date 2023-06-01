@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/welcomeScreen">
+
+    <fragment
+        android:id="@+id/welcomeScreen"
+        android:name="com.example.wallery.WelcomeScreen"
+        android:label="fragment_welcome_screen"
+        tools:layout="@layout/fragment_welcome_screen" >
+        <action
+            android:id="@+id/action_welcomeScreen_to_introPage1"
+            app:destination="@id/introPage1"
+            app:enterAnim="@android:anim/fade_in" />
+        <action
+            android:id="@+id/action_welcomeScreen_to_signInPage"
+            app:destination="@id/signInPage"
+            app:enterAnim="@android:anim/fade_in"
+            app:popEnterAnim="@android:anim/fade_in" />
+        <action
+            android:id="@+id/action_welcomeScreen_to_homePage"
+            app:destination="@id/homePage" />
+    </fragment>
+    <fragment
+        android:id="@+id/introPage1"
+        android:name="com.example.wallery.IntroPage1"
+        android:label="fragment_intro_page1"
+        tools:layout="@layout/fragment_intro_page1" >
+        <action
+            android:id="@+id/action_introPage1_to_introPage2"
+            app:destination="@id/introPage2"
+            app:enterAnim="@android:anim/fade_in" />
+        <action
+            android:id="@+id/action_introPage1_to_welcomeScreen"
+            app:destination="@id/welcomeScreen"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popEnterAnim="@android:anim/accelerate_decelerate_interpolator"
+            app:popUpTo="@id/welcomeScreen"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_introPage1_to_signUpPage2"
+            app:destination="@id/signUpPage"
+            app:enterAnim="@android:anim/fade_in"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popUpTo="@id/welcomeScreen" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_intro_page2"
+        android:id="@+id/introPage2"
+        android:name="com.example.wallery.IntroPage2"
+        android:label="IntroPage2" >
+        <action
+            android:id="@+id/action_introPage2_to_introPage3"
+            app:destination="@id/introPage3"
+            app:enterAnim="@android:anim/fade_in" />
+        <action
+            android:id="@+id/action_introPage2_to_introPage1"
+            app:destination="@id/introPage1"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popUpTo="@id/introPage1"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_introPage2_to_signUpPage"
+            app:destination="@id/signUpPage"
+            app:enterAnim="@android:anim/fade_in"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popUpTo="@id/welcomeScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/introPage3"
+        tools:layout="@layout/fragment_intro_page3"
+        android:name="com.example.wallery.IntroPage3"
+        android:label="IntroPage3" >
+        <action
+            android:id="@+id/action_introPage3_to_introPage2"
+            app:destination="@id/introPage2"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:popUpTo="@id/introPage2"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_introPage3_to_signUpPage"
+            app:destination="@id/signUpPage"
+            app:enterAnim="@android:anim/fade_in"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popUpTo="@id/welcomeScreen"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_sign_in_page"
+        android:id="@+id/signInPage"
+        android:name="com.example.wallery.SignInPage"
+        android:label="SignInPage" >
+        <action
+            android:id="@+id/action_signInPage_to_signUpPage2"
+            app:destination="@id/signUpPage"
+            app:enterAnim="@android:anim/fade_in"
+            app:popUpTo="@id/welcomeScreen"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_signInPage_to_homePage"
+            app:destination="@id/homePage"
+            app:enterAnim="@android:anim/fade_in"
+            app:popUpTo="@id/welcomeScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+     <fragment
+        android:id="@+id/signUpPage"
+        android:name="com.example.wallery.SignUpPage"
+        android:label="fragment_sign_up_page"
+        tools:layout="@layout/fragment_sign_up_page" >
+         <action
+             android:id="@+id/action_signUpPage_to_signInPage"
+             app:destination="@id/signInPage"
+             app:enterAnim="@android:anim/fade_in"
+             app:popUpTo="@id/welcomeScreen" />
+         <action
+             android:id="@+id/action_signUpPage_to_homePage"
+             app:destination="@id/homePage"
+             app:enterAnim="@android:anim/fade_in"
+             app:popUpTo="@id/welcomeScreen"
+             app:popUpToInclusive="true" />
+     </fragment>
+    <fragment
+        tools:layout="@layout/fragment_home_page"
+        android:id="@+id/homePage"
+        android:name="com.example.wallery.HomePage"
+        android:label="HomePage" >
+        <action
+            android:id="@+id/action_homePage_to_signInPage"
+            app:destination="@id/signInPage"
+            app:enterAnim="@android:anim/fade_in"
+            app:popUpTo="@id/homePage"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_homePage_to_feedback_page"
+            app:destination="@id/feedback_page"
+            app:enterAnim="@android:anim/fade_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/feedback_page"
+        android:name="com.example.wallery.FeedbackPage"
+        android:label="feedback_page"
+        tools:layout="@layout/fragment_feedback_page">
+        <action
+            android:id="@+id/action_feedback_page_to_homePage"
+            app:destination="@id/homePage"
+            app:enterAnim="@android:anim/fade_in"
+            app:popUpTo="@id/homePage" />
+        <action
+            android:id="@+id/action_feedback_page_to_successfulFeedbackPage"
+            app:destination="@id/successfulFeedbackPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/successfulFeedbackPage"
+        android:name="com.example.wallery.SuccessfulFeedbackPage"
+        android:label="fragment_successful_feedback_page"
+        tools:layout="@layout/fragment_successful_feedback_page" >
+        <action
+            android:id="@+id/action_successfulFeedbackPage_to_homePage"
+            app:destination="@id/homePage"
+            app:popUpTo="@id/homePage" />
+    </fragment>
+</navigation>

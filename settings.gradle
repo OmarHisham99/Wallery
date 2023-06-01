@@ -1,0 +1,5 @@
+include ':app'
+rootProject.name = "Wallery"
+include ':openCVLibrary347'
+include ':unityLibrary'
+project(':unityLibrary').projectDir=new File('D:\\Android Dev\\WalleryTry2\\unityLibrary')

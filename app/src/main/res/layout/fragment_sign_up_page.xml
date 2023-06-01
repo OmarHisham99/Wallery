@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpPage"
+    android:background="@drawable/signinpage"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="396dp"
+            android:layout_height="449dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/firstName_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="42dp"
+                    android:fontFamily="@font/arial"
+                    android:text="First Name"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/firstName_field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/fieldborder"
+                    android:ems="10"
+                    android:textSize="16dp"
+                    android:hint="Enter Your First Name"
+                    android:inputType="textPersonName"
+                    android:paddingStart="20dp" />
+
+                <TextView
+                    android:id="@+id/seconName_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="42dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/arial"
+                    android:text="Second Name"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/secondName_field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/fieldborder"
+                    android:ems="10"
+                    android:hint="Enter Your second Name"
+                    android:textSize="16dp"
+                    android:inputType="textPersonName"
+                    android:paddingStart="20dp" />
+
+                <TextView
+                    android:id="@+id/email_txt_signUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="42dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/arial"
+                    android:text="Email"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/email_field_signUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/fieldborder"
+                    android:drawableRight="@drawable/person_icon"
+
+                    android:ems="10"
+                    android:hint="Enter Your Email"
+                    android:textSize="16dp"
+                    android:inputType="textPersonName"
+                    android:paddingStart="20dp"
+                    android:paddingRight="10dp" />
+
+                <TextView
+                    android:id="@+id/password_txt_signUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="42dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/arial"
+                    android:text="Password"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/password_field_signUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/fieldborder"
+                    android:drawableRight="@drawable/eye_icon"
+                    android:ems="10"
+                    android:hint="Enter Your Password"
+                    android:textSize="16dp"
+                    android:inputType="textPassword"
+                    android:paddingStart="20dp"
+                    android:paddingRight="10dp" />
+
+                <TextView
+                    android:id="@+id/birhdate_txt_signUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="42dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/arial"
+                    android:text="Birthdate"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/birthdate_field_signUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/fieldborder"
+                    android:drawableRight="@drawable/calender_icon"
+                    android:textSize="16dp"
+                    android:ems="10"
+                    android:hint="DD/MM/YYYY"
+                    android:inputType="textPersonName"
+                    android:paddingStart="20dp"
+                    android:paddingRight="10dp" />
+            </LinearLayout>
+        </ScrollView>
+
+        <ImageButton
+            android:id="@+id/signup_btn_signUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/signup_btn"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+        <TextView
+            android:id="@+id/alreadyHaveAcc_txt_signUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/arial"
+            android:text="Already have an account?"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.38"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signup_btn_signUp" />
+
+        <TextView
+            android:id="@+id/login_txt_signUp"
+            android:layout_width="63dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="4dp"
+            android:fontFamily="@font/arial"
+            android:text="Login"
+            android:textColor="@color/yellow"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/alreadyHaveAcc_txt_signUp"
+            app:layout_constraintTop_toTopOf="@+id/alreadyHaveAcc_txt_signUp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
+</layout>

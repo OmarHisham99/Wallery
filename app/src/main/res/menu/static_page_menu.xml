@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/take_photo" android:title="Take Photo" />
+    <item android:id="@+id/save_photo" android:title="Save Photo" />
+    <item android:id="@+id/choose_color" android:title="Choose Color" />
+    <item  android:id="@+id/choose_texture" android:title="Choose Texture" />
+    <item android:id="@+id/share_photo" android:title="Share Photo"/>
+
+</menu>

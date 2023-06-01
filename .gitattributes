@@ -1,0 +1,8 @@
+unityLibrary/build/il2cpp_arm64-v8a_Release/il2cpp_cache/linkresult_C1FC7C3B0BFC407BB8E6A5A72FFE8F96/libil2cpp.sym.so filter=lfs diff=lfs merge=lfs -text
+[[:space:]]unityLibrary/build/il2cpp_arm64-v8a_Release/il2cpp_cache/linkresult_C1FC7C3B0BFC407BB8E6A5A72FFE8F96/libil2cpp.dbg.so filter=lfs diff=lfs merge=lfs -text
+unityLibrary/build/il2cpp_arm64-v8a_Release/il2cpp_cache/linkresult_C1FC7C3B0BFC407BB8E6A5A72FFE8F96/libil2cpp.dbg.so filter=lfs diff=lfs merge=lfs -text
+unityLibrary filter=lfs diff=lfs merge=lfs -text
+[[:space:]]unityLibrary/build/il2cpp_arm64-v8a_Release/il2cpp_cache/linkresult_BED9F2B979AF5FE13DA78987290BAD30/libil2cpp.dbg.so filter=lfs diff=lfs merge=lfs -text
+[[:space:]]unityLibrary/build/il2cpp_arm64-v8a_Release/il2cpp_cache/linkresult_BED9F2B979AF5FE13DA78987290BAD30/libil2cpp.sym.so filter=lfs diff=lfs merge=lfs -text
+[[:space:]]unityLibrary/build/il2cpp_arm64-v8a_Release/il2cpp_cache/linkresult_C1FC7C3B0BFC407BB8E6A5A72FFE8F96/libil2cpp.sym.so filter=lfs diff=lfs merge=lfs -text
+*.so filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "590486086019",
+    "project_id": "wallery-a6b2d",
+    "storage_bucket": "wallery-a6b2d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:590486086019:android:773fb1b59325db1ed6d6b6",
+        "android_client_info": {
+          "package_name": "com.example.wallery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "590486086019-o37t0smdqkjsibqh85t840i5a7op44bh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqOFSQOvGuh-dvWpIiemB0qoW7uN3IW2A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "590486086019-o37t0smdqkjsibqh85t840i5a7op44bh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
